@@ -26,24 +26,17 @@ namespace Demo6.Controllers
         public  IActionResult DisplayDetails(Registeration registeration)
         {
             if (ModelState.IsValid)
-            {
-                //Registeration data = registerationRepositry.Add(registeration);
+            {                
                 return View(registeration);
             }          
                 return View("AddDetails");                
         }
-      //[HttpPost]
-      //  public PartialViewResult Details2(Registeration registeration)
-      //  {
-      //      return PartialView("_Details1",registeration);
-      //  }
-       
-        //public ContentResult AboutUs()
-        //{
-        //    return Content("Welcome. You Can Apply to this Job using " +
-        //        "New Job Application in the Home Page");
-        //}
+      
+        public ContentResult AboutUs()
+        {
+            return Content("Welcome. To apply for the job click on New Job Application in the Home Page");
+        }
 
-       
+
     }
 }
