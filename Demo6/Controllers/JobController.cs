@@ -27,13 +27,23 @@ namespace Demo6.Controllers
         {
             if (ModelState.IsValid)
             {
+                //Registeration data = registerationRepositry.Add(registeration);
                 return View(registeration);
-            }
-            else
-            {
-                return View("AddDetails");
-            }
-            
+            }          
+                return View("AddDetails");                
         }
+      //[HttpPost]
+      //  public PartialViewResult Details2(Registeration registeration)
+      //  {
+      //      return PartialView("_Details1",registeration);
+      //  }
+       
+        //public ContentResult AboutUs()
+        //{
+        //    return Content("Welcome. You Can Apply to this Job using " +
+        //        "New Job Application in the Home Page");
+        //}
+
+       
     }
 }

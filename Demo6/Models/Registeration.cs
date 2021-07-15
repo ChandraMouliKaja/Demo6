@@ -41,13 +41,13 @@ namespace Demo6.Models
         public string PositionApplied { get; set; }
         public string LinkedIn { get; set; }
         public string Aboutus { get; set; }
-        public DateTime AppStartDate { get; set; }
+        [Required(ErrorMessage ="This Field is Required")]
+        public DateTime? AppStartDate { get; set; }
         public string CoverLetter { get; set; }
 
         [Required]
         [RegularExpression(@"^[0-9]{6}$")]
         public string PinCode { get; set; }
-        public IFormFile FormFile { get; set; }
-
+       
     }
 }
