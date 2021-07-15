@@ -1,0 +1,36 @@
+﻿@model Registeration
+
+<div class="row">
+    <label style="font-size:18px;font-family:'Arial Narrow Bold' ">Current Address :</label><br />
+</div>
+
+<div class="row">
+    <div>
+        <input asp-for="StreetAddress" style="width:480px" /><br />
+        <label asp-for="StreetAddress" style="font-size:12px"> Street Address</label><br />
+        <span asp-validation-for="StreetAddress" class="text-danger"></span>
+        <input asp-for="StreetAddress1" style="width:480px" /><br />
+        <label asp-for="StreetAddress1" style="font-size:12px"> Street Address 1</label><br />
+    </div>
+</div>
+<div class="row">
+    <div class="column1">
+        <input asp-for="City" /><br />
+        <label asp-for="City" style="font-size:12px">City</label><br />
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+    <div class="column1">
+        <input asp-for="State" /><br />
+        <label asp-for="State" style="font-size:12px">State / Province</label><br />
+        <span asp-validation-for="State" class="text-danger"></span>
+    </div>
+</div>
+
+
+<div class="row">
+    <div>
+        <input asp-for="PinCode" /><br />
+        <label asp-for="PinCode" style="font-size:12px">Postal/Pincode</label><br />
+        <span asp-validation-for="PinCode" class="text-danger"></span>
+    </div>
+</div>

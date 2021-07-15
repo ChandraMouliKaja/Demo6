@@ -1,0 +1,23 @@
+﻿@model Registeration
+
+<div class="row">
+    <label style="font-size:18px;font-family:'Arial Narrow Bold' ">Full Name :</label>
+</div>
+
+<div class="row">
+    <div class="column">
+        <input asp-for="fName"><br />
+        <label asp-for="fName" style="font-size:12px">FirstName</label><br />
+        <span asp-validation-for="fName" class="text-danger"></span>
+    </div>
+    <div class="column">
+        <input asp-for="mName"><br />
+        <label asp-for="mName" style="font-size:12px">MiddleName</label><br />
+        <span asp-validation-for="mName" class="text-danger"></span>
+    </div>
+    <div class="column">
+        <input asp-for="lName"><br />
+        <label asp-for="lName" style="font-size:12px">LastName</label><br />
+        <span asp-validation-for="lName" class="text-danger"></span>
+    </div>
+</div>

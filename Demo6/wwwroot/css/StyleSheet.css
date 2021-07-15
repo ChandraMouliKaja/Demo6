@@ -1,0 +1,15 @@
+﻿.column {
+    width: 33.33%;
+}
+
+.column1 {
+   
+    width: 50%;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

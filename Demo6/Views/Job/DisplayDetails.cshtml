@@ -1,0 +1,75 @@
+﻿@using Demo6.Models;
+@model Registeration
+
+<html>
+<head>
+    @{
+        ViewData["Title"] = "Details Page";
+    }
+</head>
+<body>
+
+    <h1>Submitted Details</h1>
+    <table border="1" align="center">
+        <tr>
+            <td> Full Name </td>
+            <td>@Model.fName &nbsp; @Model.mName &nbsp;@Model.lName</td>
+        </tr>
+        <tr>
+            <td>Date of Birth </td>
+            <td>@Model.Date &nbsp; @Model.Month &nbsp; @Model.Year</td>
+        </tr>        
+        <tr>
+            <td>Street Address</td>
+            <td>@Model.StreetAddress</td>
+        </tr>
+        <tr>
+            <td>Street Address1</td>
+            <td>@Model.StreetAddress1</td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>@Model.StreetAddress1</td>
+        </tr>
+        <tr>
+            <td>State / Province</td>
+            <td>@Model.State</td>
+        </tr>
+        <tr>
+            <td>Postal/Zip Code</td>
+            <td>@Model.PinCode</td>
+        </tr>
+        <tr>
+            <td>EMail Address</td>
+            <td>@Model.EMail</td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td>@Model.PhoneNumber</td>
+        </tr>
+        <tr>
+            <td>LinkedIn</td>
+            <td>@Model.LinkedIn</td>
+        </tr>
+        <tr>
+            <td>Position Applied</td>
+            <td>@Model.PositionApplied</td>
+        </tr>
+        <tr>
+            <td>About Us</td>
+            <td>@Model.Aboutus</td>
+        </tr>
+        <tr>
+            <td>Available Start Date</td>
+            <td>@Model.AppStartDate</td>
+        </tr>
+        <tr>
+            <td>Cover Letter</td>
+            <td>@Model.CoverLetter</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
+
